@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shanice Lettsome's Schedule</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+      href="jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" 
+        src="jquery-2.2.4.min.js">
+</script>
+<script type="text/javascript" 
+        src="jquery.mobile-1.4.5.min.js">
+</script>
+<script src="application.js"></script>
+</head>
+<body>
+
+	<div data-role="page">
+		<div data-role="header">
+			<h1>Notekeeper</h1>
+		</div>
+
+		<div role="main" class="ui-content" >
+      <div data-role="navbar" data-iconpos="left">
+<ul>
+  <li><a href="home.html" data-icon="home" >HOME</a></li>
+   <li><a href="about.html" data-icon="home">ABOUT</a></li>
+  <li><a href="note.html" data-icon="info" class="ui-btn-active ui-state-persist">NOTEKEEPER</a></li>
+  </ul>
+    </div>
+		<form>
+			<div class="ui-field-contain" theme="a">
+				<input id="title" type="text" placeholder="Add a note" />
+			</div>
+      <div class="ui-field-contain">
+				<input id="taskDate" type="date" min="2000-12-31" max="2040-12-31" placeholder="mm/dd/yyyy" />
+      </div>
+			<div class="ui-field-contain">
+				<textarea id="note" type="text" placeholder="The content of your note">
+				</textarea>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<input id="btnNoThanks" type="submit" value="No Thanks" />
+				</div>
+				<div class="ui-block-b">
+					<input id="btnAddNote" type="button" value="Add Note" />
+				</div>
+			</div>
+		</form>
+
+		<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</div>
+<div data-role="footer">
+		<h4>&copy; Shanice Lettsome 2017</h4>
+	</div>
+		
+</div>
+
+</body>
+</html>

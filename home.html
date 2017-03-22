@@ -1,0 +1,56 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shanice Lettsome's Schedule</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+      href="jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" 
+        src="jquery-2.2.4.min.js">
+</script>
+<script type="text/javascript" 
+        src="jquery.mobile-1.4.5.min.js">
+</script>
+</head>
+
+<body>
+
+<div data-role="page"  >
+
+	<div data-role="header">
+		<h1>Shanice Lettsome's Schedule</h1>
+	</div>
+	
+	
+	<div role="main" class="ui-content" theme="a">
+<div data-role="navbar" data-iconpos="left">
+<ul>
+  <li><a href="home.html" data-icon="home" class="ui-btn-active ui-state-persist">HOME</a></li>
+  <li><a href="about.html" data-icon="home">ABOUT</a></li>
+  <li><a href="note.html" data-icon="info">NOTEKEEPER</a></li>
+  </ul>
+    </div>
+		<ul data-role="listview" data-inset="true">
+		<li><a href="course.html" data-icon="https://cdn.glitch.com/6845c699-7afd-4242-9aa9-ec149912dbf8%2Fcarat-r-black.png">Courses</a></li>
+    <li><a href="faculty.html">Faculty</a></li>
+    <li><a href="contact.html">Salisbury University</a></li>
+		</ul>
+	</div>
+
+	<div data-role="footer">
+		<h4>&copy; Shanice Lettsome 2017</h4>
+	</div>
+		
+</div>
+
+</body>
+</html>
